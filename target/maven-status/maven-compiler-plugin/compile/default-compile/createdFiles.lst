@@ -1,0 +1,7 @@
+SigninResolver.class
+User.class
+Mutation.class
+UserRepository.class
+SigninPayload.class
+Query.class
+AuthData.class
