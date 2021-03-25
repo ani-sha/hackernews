@@ -9,6 +9,6 @@ jobs:
       - name: Repository Dispatch
         uses: peter-evans/repository-dispatch@v1
         with:
-          token: ${{ secrets.PERSONAL_TOKEN }}
+          token: ${{ secrets.REPO_TOKEN }}
           repository: schemabuilder
           event-type: update-event
