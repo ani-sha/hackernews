@@ -1,0 +1,14 @@
+name: Build CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repository Dispatch
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          repository: schemabuilder
+          event-type: update-event
