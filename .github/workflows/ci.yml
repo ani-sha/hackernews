@@ -10,5 +10,5 @@ jobs:
         uses: peter-evans/repository-dispatch@v1
         with:
           token: ${{ secrets.REPO_TOKEN }}
-          repository: schemabuilder
+          repository: ani-sha/schemabuilder
           event-type: update-event
